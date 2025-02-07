@@ -1,4 +1,4 @@
-async function fetchData(url) {
+export async function fetchData(url) {
     try {
         const response = await fetch(url);
         if (!response.ok) {
@@ -11,5 +11,3 @@ async function fetchData(url) {
     }
 }
 
-const apiUrl = 'https://api.nasa.gov/planetary/apod?api_key=SPfb2CGEpfBTyoVcZihUa0l62N1fPPDYgsvEi2MQ';
-fetchData(apiUrl);
